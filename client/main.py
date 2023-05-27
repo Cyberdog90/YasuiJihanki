@@ -8,7 +8,6 @@ def main():
     window = gui.Window(title="最安値", layout=layout(), size=(800, 600), element_justification="C")
     while True:
         event, value = window.read()
-        print(value["category"])
         if event == "searchButton":
             window["table"].update(values=get_category(value["category"]))
             window["resultText"].update(visible=True)

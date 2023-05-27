@@ -3,7 +3,6 @@ from drink import Drink
 import json
 
 app = Flask(__name__)
-app.config["JSON_AS_ASCII"] = False
 
 drink = Drink()
 
